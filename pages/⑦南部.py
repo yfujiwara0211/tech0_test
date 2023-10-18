@@ -13,9 +13,9 @@ df_park = pd.read_csv('20231015_いこーよ公園_地区別v2.csv')
 df_school = pd.read_csv('20231015_小学校_地区別v2.csv')
 df_nursery = pd.read_csv('20231015_保育園_地区別v2.csv')
 df_kindergarten = pd.read_csv('20231015_幼稚園_地区別v2.csv')
-df_lesson=pd.read_csv('20231015_習い事スクスク_スクレイピング_経度緯度追加_ジャンル別_地区別v2.csv')
-df_supermarket = pd.read_csv('20231015_スーパー_地区別v2.csv')
-df_store = pd.read_csv('20231015_コンビニ_地区別.csv')
+df_lesson = pd.read_csv('20231015_習い事スクスク_スクレイピング_経度緯度追加_ジャンル別_地区別v2.csv')
+df_supermarket = pd.read_csv('20231015_スーパー_地区別v2.csv')
+df_store = pd.read_csv('20231015_コンビニ_地区別.csv')
 df_hospital = pd.read_csv('20231015_病院_地区別v2.csv')
 
 # 地区ブロックの設定（南部地域だけ地図表示の問題があるためブロック設定を詳細にしています）
