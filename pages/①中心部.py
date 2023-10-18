@@ -13,7 +13,7 @@ df_park = pd.read_csv('20231015_いこーよ公園_地区別v2.csv')
 df_school = pd.read_csv('20231015_小学校_地区別v2.csv')
 df_nursery = pd.read_csv('20231015_保育園_地区別v2.csv')
 df_kindergarten = pd.read_csv('20231015_幼稚園_地区別v2.csv')
-df_lesson=pd.read_csv('20231015_習い事スクスク_スクレイピング_経度緯度追加_ジャンル別_地区別v2.csv')
+df_lesson = pd.read_csv('20231015_習い事スクスク_スクレイピング_経度緯度追加_ジャンル別_地区別v2.csv')
 df_supermarket = pd.read_csv('20231015_スーパー_地区別v2.csv')
 df_store = pd.read_csv('20231015_コンビニ_地区別.csv')
 df_hospital = pd.read_csv('20231015_病院_地区別v2.csv')
@@ -29,9 +29,9 @@ df_supermarket = df_supermarket[df_supermarket['Block'] == '中心部地域']
 
 # 地図の基本設定⇒locationを地区ブロックごとに調整する
 m = folium.Map(
-    location=[34.22294511274448, 135.18994329478005],
-    tiles='OpenStreetMap',
-    zoom_start=14
+    location = [34.22294511274448, 135.18994329478005],
+    tiles ='OpenStreetMap',
+    zoom_start = 14
 )
 
 # 地図表示のサイドバー
@@ -40,7 +40,7 @@ with st.sidebar:
     # チェックボックスを作成
     show_parks = st.sidebar.checkbox('公園を表示する', value=True)
     show_schools = st.sidebar.checkbox('小学校を表示する', value=True)
-    show_nurseries =st.sidebar.checkbox('保育園を表示する', value=False)
+    show_nurseries = st.sidebar.checkbox('保育園を表示する', value=False)
     show_kindergartens = st.sidebar.checkbox('幼稚園を表示する', value=False)
     show_lessons = st.sidebar.checkbox('習い事を表示する', value=False)
     if show_lessons:
